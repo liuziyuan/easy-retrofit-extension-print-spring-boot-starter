@@ -9,7 +9,7 @@ public class PrintSpringBootConfig {
 
     @Bean
     @ConditionalOnMissingBean
-    public PrintInterceptor retrofitCloudInterceptor() {
+    public PrintInterceptor printInterceptor() {
         return new PrintInterceptor();
     }
 }
