@@ -3,21 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <parent>
-        <groupId>io.github.easyretrofit</groupId>
-        <artifactId>easy-retrofit-parent</artifactId>
-        <version>1.0.0</version>
-    </parent>
-
     <modelVersion>4.0.0</modelVersion>
     <description>easy-retrofit extension demo</description>
-    <artifactId>easy-retrofit-extension-demo</artifactId>
+    <groupId>io.github.liuziyuan</groupId>
+    <artifactId>easy-retrofit-extension-print-spring-boot-starter</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <junit.version>4.13.2</junit.version>
         <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
+        <retrofit.version>2.11.0</retrofit.version>
         <lombok.version>1.18.22</lombok.version>
     </properties>
 
@@ -26,6 +22,7 @@
             <groupId>io.github.easyretrofit</groupId>
             <artifactId>easy-retrofit-core</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -48,63 +45,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>retrofit-mock</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>mockwebserver</artifactId>
-            <version>3.14.9</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-rxjava</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-rxjava2</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-rxjava3</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-guava</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>converter-gson</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-scala</artifactId>
-            <version>${retrofit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
 
     </dependencies>
 

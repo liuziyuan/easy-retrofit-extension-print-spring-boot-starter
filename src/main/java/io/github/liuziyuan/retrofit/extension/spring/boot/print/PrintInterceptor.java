@@ -23,4 +23,9 @@ public class PrintInterceptor extends BaseInterceptor {
         log.info("{}{}", value, chain.request().method());
         return chain.proceed(chain.request());
     }
+
+    @Override
+    protected RetrofitResourceContext getInjectedRetrofitResourceContext() {
+        return this.context;
+    }
 }
